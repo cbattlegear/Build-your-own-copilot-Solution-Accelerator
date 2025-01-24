@@ -1,0 +1,9 @@
+services:
+  webapp:
+    build:
+      context: .
+      dockerfile: ResearchAssistant/App/WebApp.Dockerfile
+    env_file:
+      - .env
+    ports:
+      - "80:80"
